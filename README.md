@@ -3,7 +3,7 @@ Template for vue plugin project with SASS and global imports for SASS.
 
 ## Installation
 ```
-npm i -D @dbetka/vue-plugin-template
+npm i
 ```
 
 ## Building
@@ -23,8 +23,9 @@ npm run build-themes-css        Build css bundles for each sass theme file.
 
 #### Full Bundle
 ```js
-import VueAtomic from '@dbetka/vue-plugin-template'
-import '@dbetka/vue-plugin-template/dist/index.css'
+import VueAtomic from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
+import 'vue-plugin-template/dist/themes/light.css'
+import 'vue-plugin-template/dist/index.css'
 
 Vue.use(VueAtomic)
 ```
@@ -32,15 +33,17 @@ Vue.use(VueAtomic)
 ### Individual components
 with default name
 ```js
-import { OwnButton } from '@dbetka/vue-plugin-template'
-import '@dbetka/vue-plugin-template/dist/own-button.css'
+import { OwnButton } from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
+import 'vue-plugin-template/dist/themes/light.css'
+import 'vue-plugin-template/dist/own-button.css'
 
 Vue.component(OwnButton.name, OwnButton) // component name is m-input
 ```
 with own name
 ```js
-import { OwnButton } from '@dbetka/vue-plugin-template'
-import '@dbetka/vue-plugin-template/dist/own-button.css'
+import { OwnButton } from 'vue-plugin-template' // vue-plugin-template is path to plugin directory
+import 'vue-plugin-template/dist/themes/light.css'
+import 'vue-plugin-template/dist/own-button.css'
 
 Vue.component('new-button', OwnButton) // component name is new-input
 ```
