@@ -37,7 +37,7 @@ import { OwnButton } from 'vue-plugin-template' // vue-plugin-template is path t
 import 'vue-plugin-template/dist/themes/light.css'
 import 'vue-plugin-template/dist/own-button.css'
 
-Vue.component(OwnButton.name, OwnButton) // component name is m-input
+Vue.component(OwnButton.name, OwnButton) // component name is own-button
 ```
 with own name
 ```js
